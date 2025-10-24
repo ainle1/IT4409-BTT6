@@ -28,7 +28,33 @@
 
   <section id="featured-products">
     <h2>Sản phẩm nổi bật</h2>
+<!-- Thanh tìm kiếm và nút thêm -->
+  <div id="product-actions" style="text-align:center; margin-bottom: 20px;">
+    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." style="padding:8px; width:250px;">
+    <button id="searchBtn">Tìm</button>
+    <button id="addProductBtn">Thêm sản phẩm</button>
+  </div>
 
+  <div id="product-list">
+  </div>
+
+  <form id="addProductForm" class="hidden">
+    <label for="productName">Tên sản phẩm:</label>
+    <input type="text" id="productName" required>
+
+    <label for="productDesc">Mô tả:</label>
+    <textarea id="productDesc" rows="3" required></textarea>
+
+    <label for="productPrice">Giá (₫):</label>
+    <input type="number" id="productPrice" required>
+
+    <label for="productImage">Ảnh (URL):</label>
+    <input type="url" id="productImage" placeholder="https://...">
+
+    <button type="submit">Thêm sản phẩm</button>
+  </form>
+
+</section>
   <div id="product-list">
     <article class="product-item">
       <img src="https://lh3.googleusercontent.com/sitesv/AICyYdYsh7UCLZxfod8xEus0vjju0-iYBUgUwwdADz9VPwzEN3IR2D-nBkSeT470gxWo3ej3c16dYBlEYfZs6ohK0IZBc0xqhpoqK2Zk1RWL09JKYdWzeKlsPoP6s1TgF89WkBWBf7Kvuuf82wBDppJVP3enyQQ76cIalTPOh59bwM3J73NbP31Xy9uDoa2cuuLJuHXdcT-_cCJESlg=w1280" alt="Bìa sách 1" width="150">
@@ -76,5 +102,6 @@
         <p>&copy; 2025 Cửa hàng Sách H&A | Địa chỉ: Ngọc Hồi, Hà Nội</p>
     </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

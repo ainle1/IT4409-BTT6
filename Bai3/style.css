@@ -308,3 +308,7 @@ footer {
     margin: 20px 10px;
   }
 }
+
+.hidden {
+  display: none;
+}
